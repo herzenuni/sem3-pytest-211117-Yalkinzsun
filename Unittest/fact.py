@@ -1,12 +1,8 @@
 def fact(n):
-    
     res = None
-    
     try: 
-
         if type(n) is not int:
-            raise TypeError
-        
+            raise TypeError 
         n = int(n)
     except (ValueError, TypeError) as e:
         print('Argument "{}" is not a number '.format(n))
@@ -19,9 +15,7 @@ def fact(n):
             res = n * fact(n-1)
             return res 
 
-
 if __name__ == '__main__':
-    
     import unittest
     
     
